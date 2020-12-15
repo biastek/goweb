@@ -1,0 +1,9 @@
+{{template "header" .}}
+<h1>Prime Number Form</h1>
+The highest prime number: {{.}}
+<form action="/apply" method="post">
+    <label for="primeid"></label>
+    <input type="text" name="txtprime" id="primeid">
+    <input type="submit">
+</form>
+{{template "footer" .}}
